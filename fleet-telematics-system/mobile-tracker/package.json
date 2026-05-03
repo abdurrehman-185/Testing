@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "start:tunnel": "expo start --tunnel --go",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eas:init": "npx eas-cli init",
+    "build:android:preview": "npx eas-cli build --platform android --profile preview",
+    "build:android:production": "npx eas-cli build --platform android --profile production",
+    "build:ios:production": "npx eas-cli build --platform ios --profile production"
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "expo-location": "~19.0.8",
+    "expo-task-manager": "~14.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "devDependencies": {
+    "@expo/ngrok": "^4.1.0"
+  },
+  "name": "mobile-tracker",
+  "version": "1.0.0"
+}
