@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Vehicle Tracker",
+    "slug": "vehicle-tracker",
+    "version": "1.0.0",
+    "scheme": "vehicletracker",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Vehicle Tracker to use your location in the background.",
+          "locationWhenInUsePermission": "Allow Vehicle Tracker to use your location.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.abdurrehman.vehicletracker",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    }
+  }
+}
